@@ -1,0 +1,25 @@
+.spacer{
+	flex: 1 1 auto;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url(/assets/Montserrat-Regular.ttf) format("truetype");
+  font-weight:500;
+}
+@font-face {
+  font-family: 'Oxygen', sans-serif;
+  src: url(/assets/Oxygen-Regular.ttf) format("truetype");
+}
+button{
+	font-weight: bold;	
+  font-family: 'Montserrat';
+  outline: none;
+  outline: 0;
+  border: none;
+  background: none;
+}
+#title{
+	font-weight: bold;	
+  font-family: 'Oxygen';
+  outline: none;
+}

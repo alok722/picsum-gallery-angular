@@ -1,0 +1,12 @@
+<div class="row">
+  <mat-spinner color="warn" *ngIf="!gallery" class="loader container d-flex justify-content-center"></mat-spinner>
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt-10" *ngFor="let image of gallery">
+    <mat-card>
+      <img mat-card-image *ngIf="image.download_url" [src]="image.download_url" alt="" />
+      <mat-card-actions>
+        <button mat-button (click)="onFavorite(image)">Favorite</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
+<mat-paginator [length]="length" [pageSize]="pageSize" (page)="onPageChange($event)"></mat-paginator>
