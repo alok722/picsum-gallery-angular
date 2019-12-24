@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import {saveAs} from 'file-saver';
 
 @Component({
   selector: 'app-favourites',
@@ -19,6 +20,14 @@ export class FavouritesComponent implements OnInit {
     if (val !== null) {
       this.images = JSON.parse(val);
     }
+  }
+
+  onDownload(url) {
+    let fileName = Date.now() + '-image.png'
+    fetch(url).then(function(res) {return res.blob()})
+    .then(function(blob) {
+      saveAs(blob, fileName)
+    })
   }
 
   onUnfavorite(image) {

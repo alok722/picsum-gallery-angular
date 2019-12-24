@@ -7,8 +7,12 @@ import { FavouritesComponent } from './favourites/favourites.component';
 
 const routes: Routes = [
 {
-	path: '',
+	path: 'home',
 	component: HomeComponent
+},
+{ 	path: '', 
+	redirectTo: 'home',
+	pathMatch: 'full' 
 },
 {
 	path: 'favorites',

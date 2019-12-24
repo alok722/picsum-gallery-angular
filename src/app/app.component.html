@@ -1,9 +1,9 @@
-<mat-toolbar color="warn" [class.mat-elevation-z2]="!isActive" [class.mat-elevation-z8]="isActive">
+<mat-toolbar color="warn">
 	<span [routerLink]="['/']" style="cursor: pointer;" id="title">ANGULAR GALLERY</span><span class="spacer"></span>
 	<div>
-		<button class="mat-typography" mat-button [routerLink]="['/']"><i>HOME</i></button>
-		<button mat-button [routerLink]="['/favorites']"><i>FAVORITES</i></button>
-		<button mat-button [routerLink]="['/contact']"><i>CONTACT US</i></button>
+		<button mat-button routerLinkActive="active" [routerLink]="['/home']"><i>HOME</i></button>
+		<button mat-button routerLinkActive="active" [routerLink]="['/favorites']"><i>FAVORITES</i></button>
+		<button mat-button routerLinkActive="active" [routerLink]="['/contact']"><i>CONTACT US</i></button>
 	</div>
 </mat-toolbar>
 

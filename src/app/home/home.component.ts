@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { GalleryService } from '../services/gallery.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import {saveAs} from 'file-saver';
 
 @Component({
   selector: 'app-home',
@@ -19,7 +20,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   constructor(private galleryService: GalleryService,private snackBar: MatSnackBar) { }
 
   ngOnInit() {
-  	this.getData();
+    this.getData();
   }
 
   getData() {
@@ -59,4 +60,11 @@ export class HomeComponent implements OnInit, OnDestroy {
      duration: 2000});
   }
 
+  onDownload(url) {
+    let fileName = Date.now() + '-image.png'
+    fetch(url).then(function(res) {return res.blob()})
+    .then(function(blob) {
+      saveAs(blob, fileName)
+    })
+  }
 }
