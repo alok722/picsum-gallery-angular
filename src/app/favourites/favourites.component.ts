@@ -8,7 +8,7 @@ import {saveAs} from 'file-saver';
   styleUrls: ['./favourites.component.scss']
 })
 export class FavouritesComponent implements OnInit {
-	images;
+	images = [];
   constructor(private snackBar: MatSnackBar) { }
 
   ngOnInit() {

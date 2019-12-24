@@ -1,10 +1,11 @@
+<div class="text-center" *ngIf="images?.length == 0">
+  <img id="nodata" src="https://www.oneworldtrip.co.in/assets/image/no_results.png" class="img-fluid" alt="">
+</div>
+
 <div class="row">
-  <div
-    class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt-10"
-    *ngFor="let image of images"
-  >
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt-10" *ngFor="let image of images">
     <mat-card>
-      <img mat-card-image *ngIf="image.download_url"[src]="image.download_url" alt="" />
+      <img mat-card-image *ngIf="image.download_url" [src]="image.download_url" alt="" />
       <mat-card-actions>
         <button mat-button color="warn" (click)="onUnfavorite(image)">Unfavorite
         </button>
