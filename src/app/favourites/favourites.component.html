@@ -7,9 +7,9 @@
     <mat-card>
       <img mat-card-image *ngIf="image.download_url" [src]="image.download_url" alt="" />
       <mat-card-actions>
-        <button mat-button color="warn" (click)="onUnfavorite(image)">Unfavorite
+        <button mat-button color="warn" (click)="onUnfavorite(image)"><i class="fa fa-trash-o"></i> Unfavorite
         </button>
-        <button mat-button color="primary" (click)="onDownload(image.download_url)">Download
+        <button mat-button color="primary" (click)="onDownload(image.download_url)"><i class="fa fa-download"></i> Download
         </button>
       </mat-card-actions>
     </mat-card>

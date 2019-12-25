@@ -1,11 +1,11 @@
 <div class="row">
-  <mat-spinner color="warn" *ngIf="!gallery" class="loader container d-flex justify-content-center"></mat-spinner>
+  <mat-spinner id="mat-spinner" *ngIf="!gallery" class="loader container d-flex justify-content-center"></mat-spinner>
   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt-10" *ngFor="let image of gallery">
     <mat-card>
       <img mat-card-image *ngIf="image.download_url" [src]="image.download_url" alt="" />
       <mat-card-actions>
-        <button mat-button (click)="onFavorite(image)">Favorite</button>
-        <button mat-button (click)="onDownload(image.download_url)">Download</button>
+        <button mat-button color="warn" (click)="onFavorite(image)"><i class="fa fa-heart"></i> Favourite</button>
+        <button mat-button color="primary" (click)="onDownload(image.download_url)"><i class="fa fa-download"></i> Download</button>
       </mat-card-actions>
     </mat-card>
   </div>

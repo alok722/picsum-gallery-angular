@@ -10,6 +10,10 @@
   font-family: 'Oxygen', sans-serif;
   src: url(/assets/Oxygen-Regular.ttf) format("truetype");
 }
+#brand-name {
+  font-weight: bold;	
+  font-family: 'Montserrat';
+}
 button{
 	font-weight: bold;	
   font-family: 'Montserrat';
@@ -23,6 +27,9 @@ button{
   font-family: 'Oxygen';
   outline: none;
 }
+i {
+  color: #fff;
+}
 .active {
-  background-color: #ab47bc;
+  background-color: #007BBE ;
 }

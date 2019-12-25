@@ -1,12 +1,23 @@
-<mat-toolbar color="warn">
-	<span [routerLink]="['/']" style="cursor: pointer;" id="title">ANGULAR GALLERY</span><span class="spacer"></span>
-	<div>
-		<button mat-button routerLinkActive="active" [routerLink]="['/home']"><i>HOME</i></button>
-		<button mat-button routerLinkActive="active" [routerLink]="['/favorites']"><i>FAVORITES</i></button>
-		<button mat-button routerLinkActive="active" [routerLink]="['/contact']"><i>CONTACT US</i></button>
+<nav class="navbar navbar-expand-md navbar-dark bg-primary mb-4">
+	<a class="navbar-brand" href="#" id="brand-name"><i class="fa fa-camera-retro"></i> PICSUM GALLERY</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+		aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarCollapse">
+		<ul class="navbar-nav" style="margin-left: auto;">
+			<li class="nav-item">
+				<button mat-button routerLinkActive="active" [routerLink]="['/home']"><i class="fa fa-home"></i><i> HOME</i></button>
+			</li>
+			<li class="nav-item">
+				<button mat-button routerLinkActive="active" [routerLink]="['/favorites']"><i class="fa fa-heart"></i><i> FAVOURITES</i></button>
+			</li>
+			<li class="nav-item">
+				<button mat-button routerLinkActive="active" [routerLink]="['/contact']"><i class="fa fa-phone"></i><i> CONTACT US</i></button>
+			</li>
+		</ul>
 	</div>
-</mat-toolbar>
-
+</nav>
 <div class="container">
 	<router-outlet></router-outlet>
 </div>
