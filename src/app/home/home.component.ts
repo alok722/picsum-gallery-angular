@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   getData() {
     this.gallerySubscription = this.galleryService.getData(`list?page=${this.page}&limit=${this.pageSize}`).subscribe(data => {
     	this.gallery=data;
-      this.length = 180;
+      this.length = 600;
     });
   }
   ngOnDestroy() {

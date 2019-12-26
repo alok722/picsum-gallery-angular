@@ -1,0 +1,65 @@
+
+hr {
+    border-top: 1px dotted #000;
+    /*Rest of stuff here*/
+}
+
+.fas {
+    font-size: 30px;
+    width: 50px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fas:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #000;
+    transition: 1s;
+    -webkit-transform: scale(1.1) rotate(360deg);
+    -moz-transform: scale(1.1) rotate(360deg);
+    -ms-transform: scale(1.1) rotate(360deg);
+    -o-transform: scale(1.1) rotate(360deg);
+    transform: scale(1.1) rotate(360deg);
+}
+
+.fas:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.fas:active {
+    text-decoration: none;
+    color: white;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-github {
+    background: #000;
+    color: white;
+}
+
+.fa-whatsapp {
+    background: #2cbe4e;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-instagram {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white;
+}

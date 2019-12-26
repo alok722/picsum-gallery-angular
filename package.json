@@ -27,6 +27,7 @@
     "core-js": "^2.5.4",
     "file-saver": "^2.0.2",
     "font-awesome": "^4.7.0",
+    "ngx-lightbox": "^1.2.0",
     "pexels-api-wrapper": "^1.1.1",
     "rxjs": "~6.2.0",
     "zone.js": "~0.8.26"

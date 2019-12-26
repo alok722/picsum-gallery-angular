@@ -11,6 +11,7 @@ import { FavouritesComponent } from './favourites/favourites.component';
 import { ContactComponent } from './contact/contact.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     FavouritesComponent,
     ContactComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
