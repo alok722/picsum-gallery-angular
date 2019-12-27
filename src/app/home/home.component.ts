@@ -1,7 +1,27 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, Inject } from '@angular/core';
 import { GalleryService } from '../services/gallery.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import {saveAs} from 'file-saver';
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+
+export interface DialogData {
+  image: string;
+}
+@Component({
+  selector: 'dialog-overview-example-dialog',
+  templateUrl: 'dialog-overview-example-dialog.html',
+})
+export class DialogOverviewExampleDialog {
+
+  constructor(
+    public dialogRef: MatDialogRef<DialogOverviewExampleDialog>,
+    @Inject(MAT_DIALOG_DATA) public data: DialogData) {}
+
+  onNoClick(): void {
+    this.dialogRef.close();
+  }
+
+}
 
 @Component({
   selector: 'app-home',
@@ -17,7 +37,13 @@ export class HomeComponent implements OnInit, OnDestroy {
   pageSize = 6;
   page = 1;
 
-  constructor(private galleryService: GalleryService,private snackBar: MatSnackBar) { }
+  constructor(private galleryService: GalleryService,private snackBar: MatSnackBar, public dialog: MatDialog) { }
+
+  openDialog(url): void {
+    this.dialog.open(DialogOverviewExampleDialog, {
+      data: url
+    });
+  }
 
   ngOnInit() {
     this.getData();
