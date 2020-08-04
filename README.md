@@ -1,30 +1,57 @@
-# GalleryApp
+<h1 align="center">Welcome to Picsum Gallery 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <a href="#" target="_blank">
+    <img alt="License: ISC" src="https://img.shields.io/badge/License-ISC-yellow.svg" />
+  </a>
+  <a href="https://twitter.com/AlokR1" target="_blank">
+    <img alt="Twitter: AlokR1" src="https://img.shields.io/twitter/follow/AlokR1.svg?style=social" />
+  </a>
+    <a href="https://github.com/alok722" target="_blank">
+    <img alt="GitHub followers" src="https://img.shields.io/github/followers/alok722?style=social">                                       
+  </a>    
+</p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.9.
+> An angular gallery project which fetches the image from picsum API.
 
-## Source-API
-https://picsum.photos/
+### 🏠 [Homepage](https://picsum-gallery.web.app/home)
 
-## Development server
+### ✨ [Demo](https://picsum-gallery.web.app/home)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Install
 
-## Code scaffolding
+```sh
+npm install
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Usage
 
-## Build
+```sh
+Run `ng serve` for a dev server and navigate to `http://localhost:4200/`.
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Run tests
 
-## Running unit tests
+```sh
+npm run test
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Author
 
-## Running end-to-end tests
+👤 **Alok Raj**
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+* Website: https://opendevs.in
+* Twitter: [@AlokR1](https://twitter.com/AlokR1)
+* Github: [@alok722](https://github.com/alok722)
+* LinkedIn: [@alok722](https://linkedin.com/in/alok722)
 
-## Further help
+## 🤝 Contributing
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/alok722/picsum-gallery-angular/issues). 
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
