@@ -10,29 +10,29 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatDialogModule} from '@angular/material/dialog';
 @NgModule({
-  imports: [
-    CommonModule,
-    MatButtonModule,
-    MatToolbarModule,
-    MatCardModule,
-    MatIconModule,
-    MatChipsModule,
-    MatSnackBarModule,
-    MatProgressSpinnerModule,
-    MatPaginatorModule,
-    MatDialogModule
-  ],
-  exports:[
-    MatButtonModule,
-    MatToolbarModule,
-    MatCardModule,
-    MatIconModule,
-    MatChipsModule,
-    MatSnackBarModule,
-    MatProgressSpinnerModule,
-    MatPaginatorModule,
-    MatDialogModule
-    ],
-  declarations: []
+	imports: [
+		CommonModule,
+		MatButtonModule,
+		MatToolbarModule,
+		MatCardModule,
+		MatIconModule,
+		MatChipsModule,
+		MatSnackBarModule,
+		MatProgressSpinnerModule,
+		MatPaginatorModule,
+		MatDialogModule
+	],
+	exports:[
+		MatButtonModule,
+		MatToolbarModule,
+		MatCardModule,
+		MatIconModule,
+		MatChipsModule,
+		MatSnackBarModule,
+		MatProgressSpinnerModule,
+		MatPaginatorModule,
+		MatDialogModule
+	],
+	declarations: []
 })
 export class MaterialModule { }

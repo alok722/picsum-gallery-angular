@@ -4,8 +4,6 @@
 
 export const environment = {
   production: false,
-  //apiKey: '563492ad6f917000010000018236385dbb9a43e2b77e6f3d4d921efe',
-  apiKey: '',
   apiUrl: 'https://picsum.photos/v2/'
 };
 
