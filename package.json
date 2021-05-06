@@ -26,6 +26,7 @@
     "bootstrap": "^4.6.0",
     "core-js": "^2.5.7",
     "file-saver": "^2.0.5",
+    "lodash-es": "^4.17.21",
     "ngx-lightbox": "^2.3.0",
     "rxjs": "~7.0.0",
     "zone.js": "~0.11.4"

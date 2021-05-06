@@ -1,5 +1,5 @@
 button{
-	font-weight: bold;	
+	font-weight: bold;
   font-family: 'Montserrat';
   outline: none;
   outline: 0;
@@ -11,4 +11,7 @@ mat-spinner {
 }
 img:hover {
   cursor: zoom-in;
+}
+#header-img:hover {
+  cursor: unset;
 }

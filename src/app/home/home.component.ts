@@ -4,6 +4,7 @@ import { GalleryService } from '../services/gallery.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { saveAs } from 'file-saver';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { shuffle } from 'lodash-es';
 
 export interface DialogData {
   image: string;
@@ -33,6 +34,7 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   gallery: any;
   gallerySubscription;
+  randomImage = 'https://picsum.photos/1100/500';
 
   length;
   pageSize = 6;
@@ -52,7 +54,7 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   getData(): any {
   	this.gallerySubscription = this.galleryService.getData(`list?page=${this.page}&limit=${this.pageSize}`).subscribe(data => {
-  		this.gallery = data;
+  		this.gallery = shuffle(data);
   		this.length = 600;
   	});
   }
@@ -67,8 +69,8 @@ export class HomeComponent implements OnInit, OnDestroy {
   			`list?page=${event.pageIndex + 1}&limit=${this.pageSize}`
   		)
   		.subscribe(data => {
-  			this.gallery = data;
-  			this.length = 180;
+  			this.gallery = shuffle(data);
+  			this.length = 600;
   		});
   }
 

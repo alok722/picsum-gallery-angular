@@ -1,4 +1,13 @@
 <div class="row">
+  <div class="jumbotron">
+    <h1 class="display-4">Hello, world!</h1>
+    <p class="lead">this angular web app is using <a href="https://picsum.photos/" target="_blank"
+        rel="noopener noreferrer">@picsum</a> api to fetch images. fork me <a
+        href="https://github.com/alok722/picsum-gallery-angular" target="_blank" rel="noopener noreferrer">@github</a>.
+      To know more about me, click <a [routerLink]="['/about']">@here</a></p>
+    <hr class="my-4">
+    <img [src]="randomImage" id="header-img" alt="header-image" class="img-fluid" />
+  </div>
   <mat-spinner id="mat-spinner" *ngIf="!gallery" class="loader container d-flex justify-content-center"></mat-spinner>
   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt-10" *ngFor="let image of gallery">
     <mat-card>
@@ -6,7 +15,7 @@
         alt="" />
       <mat-card-actions>
         <button mat-button color="warn" (click)="onFavorite(image)"><i class="fa fa-heart"></i> Favourite</button>
-        <button mat-button color="primary" (click)="onDownload(image.download_url)"><i class="fa fa-download"></i>
+        <button mat-button color="dark" (click)="onDownload(image.download_url)"><i class="fa fa-download"></i>
           Download</button>
       </mat-card-actions>
     </mat-card>
